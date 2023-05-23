@@ -8,7 +8,7 @@ on:
     types: [created]
 
 jobs:
-  build:
+  install:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -16,7 +16,25 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
-      - run: npm test
+      - run: pnpm i
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: pnpm run test
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: pnpm i
+      - run: pnpm run build
 
   publish-npm:
     needs: build
@@ -28,6 +46,6 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm publish
+      - run: pnpm run publish
         env:
           NODE_AUTH_TOKEN: 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
