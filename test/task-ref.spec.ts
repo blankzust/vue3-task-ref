@@ -1,7 +1,7 @@
 import { defaultTaskContainer, createTaskContainer } from '../src/index';
-import { nextTick, watch } from 'vue';
+import { nextTick } from 'vue';
 
-test('test task-ref in creament order', async () => {
+test('test task-ref in creament order', () => {
   const { taskRef } = defaultTaskContainer;
   const task1Ref = taskRef({
     val: false,
@@ -27,7 +27,7 @@ test('test task-ref in creament order', async () => {
   })
 })
 
-test('test task-ref in decrease order', async () => {
+test('test task-ref in decrease order', () => {
   const { taskRef } = createTaskContainer();
   const task1Ref = taskRef({
     val: false,
@@ -72,7 +72,7 @@ test('test task-ref in decrease order', async () => {
   })
 })
 
-test('test task-ref when timeout', async () => {
+test('test task-ref when timeout', () => {
   jest.useFakeTimers();
   const { taskRef } = createTaskContainer();
   const task1Ref = taskRef({
