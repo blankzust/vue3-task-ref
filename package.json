@@ -1,6 +1,6 @@
 {
   "name": "vue3-task-ref",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vant Composition API",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.mjs",
@@ -31,10 +31,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vant-ui/vant.git",
+    "url": "https://github.com/blankzust/vue3-task-ref.git",
     "directory": "packages/vant-use"
   },
-  "bugs": "https://github.com/vant-ui/vant/issues",
+  "bugs": "https://github.com/blankzust/vue3-task-ref/issues",
   "author": "chenjiahan",
   "license": "MIT",
   "devDependencies": {
