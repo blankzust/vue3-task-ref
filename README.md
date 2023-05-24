@@ -55,6 +55,7 @@ pnpm add vue3-task-ref
   }, 100)
 </script>
 ```
+![单组优先级.gif](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e7cb8911e79149cfbfcc659ef289d2d8~tplv-k3u1fbpfcp-watermark.image?)
 
 - 多组优先级
 
@@ -106,6 +107,7 @@ pnpm add vue3-task-ref
   }, 100)
 </script>
 ```
+![分组优先级.gif](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6007c9b778ce4373be6fdcd07fd3df2f~tplv-k3u1fbpfcp-watermark.image?)
 
 - 自定义超时时间（默认为100ms）
 
@@ -149,3 +151,5 @@ pnpm add vue3-task-ref
   }, 100)
 </script>
 ```
+
+![超时.gif](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/11c7ed58e72243ccbfd774173bf30826~tplv-k3u1fbpfcp-watermark.image?)
